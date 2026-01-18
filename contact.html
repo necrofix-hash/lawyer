@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상담 문의 | RIGHTWAY 법률사무소</title>
+  <meta name="description" content="RIGHTWAY 법률사무소 상담 예약 - 무료 초기 상담, 24시간 긴급 상담 가능. 강남역 도보 5분.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v18"/>
+          <path d="M5 7l7-4 7 4"/>
+          <path d="M5 7v2a7 7 0 003.5 6"/>
+          <path d="M19 7v2a7 7 0 01-3.5 6"/>
+          <circle cx="5" cy="7" r="2"/>
+          <circle cx="19" cy="7" r="2"/>
+        </svg>
+        <div>
+          <span class="nav-logo-text">RIGHTWAY</span>
+          <span class="nav-logo-sub">Law Firm</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="practice.html" class="nav-link">Practice</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="cases.html" class="nav-link">Cases</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">무료 상담</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <span class="text-accent">Contact Us</span>
+      <h1>상담 문의</h1>
+      <p>편하게 연락 주세요. 전문 변호사가 친절히 상담해 드립니다.</p>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form fade-in">
+          <h2 style="font-size: 1.5rem; margin-bottom: var(--space-md);">온라인 상담 예약</h2>
+          <p style="color: var(--color-gray-500); margin-bottom: var(--space-lg);">
+            아래 양식을 작성해 주시면 담당 변호사가 24시간 내로 연락드립니다.
+          </p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">성함 *</label>
+              <input type="text" id="name" class="form-input" placeholder="홍길동" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">연락처 *</label>
+              <input type="tel" id="phone" class="form-input" placeholder="010-0000-0000" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">이메일</label>
+              <input type="email" id="email" class="form-input" placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="category">상담 분야 *</label>
+              <select id="category" class="form-select" required>
+                <option value="">선택해 주세요</option>
+                <option value="civil">민사 소송</option>
+                <option value="criminal">형사 변호</option>
+                <option value="corporate">기업 자문</option>
+                <option value="family">가사 · 상속</option>
+                <option value="realestate">부동산</option>
+                <option value="admin">행정</option>
+                <option value="other">기타</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">상담 내용 *</label>
+              <textarea id="message" class="form-textarea" placeholder="상담받고 싶은 내용을 간략히 적어 주세요." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; color: var(--color-gray-500); cursor: pointer;">
+                <input type="checkbox" id="privacy" required style="margin-top: 4px;">
+                <span>[필수] 개인정보 수집 및 이용에 동의합니다. 수집된 정보는 상담 목적으로만 사용되며, 상담 완료 후 파기됩니다.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-md);">
+              상담 예약하기
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info fade-in">
+          <div class="info-block">
+            <p class="info-label">전화 상담</p>
+            <div class="info-content">
+              <p><strong style="font-size: 1.5rem; color: var(--color-gold);">02-1234-5678</strong></p>
+              <p style="margin-top: var(--space-xs);">평일 09:00 - 18:00</p>
+              <p>점심시간 12:00 - 13:00</p>
+              <p style="margin-top: var(--space-sm); color: var(--color-gold);">
+                <strong>24시간 긴급 상담</strong>: 010-9999-8888
+              </p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <p class="info-label">이메일</p>
+            <div class="info-content">
+              <p><a href="mailto:contact@rightway.law" style="color: var(--color-navy);">contact@rightway.law</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <p class="info-label">오시는 길</p>
+            <div class="info-content">
+              <p><strong>서울특별시 강남구 테헤란로 123</strong></p>
+              <p>라이트웨이빌딩 10층</p>
+              <p style="margin-top: var(--space-sm);">지하철 2호선 강남역 3번 출구에서 도보 5분</p>
+              <p>주차: 건물 지하 주차장 이용 (2시간 무료)</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <p class="info-label">상담 비용 안내</p>
+            <div class="info-content">
+              <p><strong>초기 상담</strong>: 무료 (30분)</p>
+              <p><strong>유료 심층 상담</strong>: 시간당 10만원</p>
+              <p style="margin-top: var(--space-sm); font-size: 0.875rem;">
+                * 수임 시 상담료는 착수금에서 차감됩니다.<br>
+                * 정확한 비용은 사건 검토 후 안내드립니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="contact-map">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section bg-ivory">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="text-accent">FAQ</span>
+        <h2>자주 묻는 질문</h2>
+        <p>상담 전 궁금하신 점을 확인해 보세요</p>
+      </div>
+
+      <div class="container-sm">
+        <div class="value-card fade-in" style="text-align: left; margin-bottom: var(--space-md);">
+          <h3 class="value-title" style="text-align: left; font-size: 1rem;">Q. 상담 예약은 어떻게 하나요?</h3>
+          <p class="value-desc" style="text-align: left;">
+            A. 온라인 예약 양식 작성, 전화(02-1234-5678), 또는 이메일(contact@rightway.law)로
+            예약하실 수 있습니다. 긴급한 경우 24시간 긴급 상담 번호로 연락해 주세요.
+          </p>
+        </div>
+
+        <div class="value-card fade-in" style="text-align: left; margin-bottom: var(--space-md);">
+          <h3 class="value-title" style="text-align: left; font-size: 1rem;">Q. 초기 상담은 정말 무료인가요?</h3>
+          <p class="value-desc" style="text-align: left;">
+            A. 네, 30분 초기 상담은 무료입니다. 사건 개요를 파악하고 법적 쟁점을 검토하는
+            기본 상담이며, 이후 심층 상담이나 수임 여부는 상담 후 결정하시면 됩니다.
+          </p>
+        </div>
+
+        <div class="value-card fade-in" style="text-align: left; margin-bottom: var(--space-md);">
+          <h3 class="value-title" style="text-align: left; font-size: 1rem;">Q. 비용은 어떻게 책정되나요?</h3>
+          <p class="value-desc" style="text-align: left;">
+            A. 사건의 복잡성, 소요 시간, 전문성 등을 고려하여 책정됩니다.
+            상담 시 예상 비용을 투명하게 안내드리며, 숨김 비용 없이 계약서에 명시된 금액만 청구합니다.
+          </p>
+        </div>
+
+        <div class="value-card fade-in" style="text-align: left; margin-bottom: var(--space-md);">
+          <h3 class="value-title" style="text-align: left; font-size: 1rem;">Q. 상담 시 무엇을 준비해야 하나요?</h3>
+          <p class="value-desc" style="text-align: left;">
+            A. 관련 서류(계약서, 내용증명, 고소장 등)가 있다면 가져오시면 좋습니다.
+            없어도 상담은 가능하며, 사건 경위를 간단히 정리해 오시면 상담이 더 원활합니다.
+          </p>
+        </div>
+
+        <div class="value-card fade-in" style="text-align: left;">
+          <h3 class="value-title" style="text-align: left; font-size: 1rem;">Q. 화상 상담도 가능한가요?</h3>
+          <p class="value-desc" style="text-align: left;">
+            A. 네, Zoom 등 화상 회의 시스템을 통한 상담이 가능합니다.
+            방문이 어려우신 분들은 예약 시 화상 상담을 요청해 주세요.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3v18"/>
+              <path d="M5 7l7-4 7 4"/>
+              <circle cx="5" cy="7" r="2"/>
+              <circle cx="19" cy="7" r="2"/>
+            </svg>
+            <span class="footer-logo-text">RIGHTWAY</span>
+          </div>
+          <p class="footer-desc">
+            당신의 권리를 올바른 길로 안내합니다.<br>
+            20년 경력의 신뢰할 수 있는 법률 파트너.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Menu</h4>
+          <nav class="footer-links">
+            <a href="about.html">사무소 소개</a>
+            <a href="practice.html">업무 분야</a>
+            <a href="team.html">변호사 소개</a>
+            <a href="cases.html">성공 사례</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Practice</h4>
+          <nav class="footer-links">
+            <a href="practice.html">민사 소송</a>
+            <a href="practice.html">형사 변호</a>
+            <a href="practice.html">기업 자문</a>
+            <a href="practice.html">가사 · 상속</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <nav class="footer-links">
+            <a href="tel:02-1234-5678">02-1234-5678</a>
+            <a href="mailto:contact@rightway.law">contact@rightway.law</a>
+            <a href="contact.html">오시는 길</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 RIGHTWAY Law Firm. All Rights Reserved.</p>
+        <p>대한변호사협회 등록 | 사업자등록번호 123-45-67890</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -384,9 +384,28 @@ h4 {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
   overflow: hidden;
   text-align: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.70) 100%);
+  z-index: 1;
 }
 
 .hero-content {
@@ -497,14 +516,21 @@ h4 {
 /* === Practice Areas === */
 .practice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .practice-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .practice-grid { grid-template-columns: 1fr; }
 }
 
 .practice-card {
   background: var(--color-white);
   border: 1px solid var(--color-gray-200);
-  padding: var(--space-xl);
+  overflow: hidden;
   transition: all var(--transition-normal);
   position: relative;
 }
@@ -532,11 +558,26 @@ h4 {
   transform: scaleX(1);
 }
 
-.practice-icon {
-  width: 48px;
-  height: 48px;
-  color: var(--color-gold);
-  margin-bottom: var(--space-md);
+.practice-card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.practice-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.practice-card:hover .practice-card-img img {
+  transform: scale(1.05);
+}
+
+.practice-card-body {
+  padding: var(--space-xl);
 }
 
 .practice-title {
@@ -708,12 +749,9 @@ h4 {
 }
 
 .about-image {
-  background: var(--color-gray-100);
   aspect-ratio: 4/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-gray-300);
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .about-content h2 {
@@ -791,16 +829,45 @@ h4 {
 
 .value-card {
   text-align: center;
-  padding: var(--space-xl);
   background: var(--color-ivory);
   border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+}
+
+.value-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.value-card:hover .value-image img {
+  transform: scale(1.05);
+}
+
+.value-card .value-title,
+.value-card .value-desc {
+  padding: 0 var(--space-lg);
+}
+
+.value-card .value-title {
+  padding-top: var(--space-lg);
 }
 
 .value-icon {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   color: var(--color-gold);
-  margin: 0 auto var(--space-md);
+  margin: var(--space-lg) auto var(--space-sm);
+  display: block;
 }
 
 .value-title {
@@ -834,16 +901,20 @@ h4 {
 
 .team-photo {
   aspect-ratio: 3/4;
-  background: var(--color-gray-100);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-gray-300);
+  overflow: hidden;
 }
 
-.team-photo svg {
-  width: 80px;
-  height: 80px;
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.04);
 }
 
 .team-info {

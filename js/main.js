@@ -3,6 +3,9 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Hero Video
+  initHeroVideo();
+
   // Navigation
   initNavigation();
 
@@ -18,6 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Fade In Animation
   initFadeIn();
 });
+
+/* === Hero Video === */
+function initHeroVideo() {
+  const video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  const videos = ['images/1.mp4', 'images/2.mp4', 'images/3.mp4'];
+  const random = videos[Math.floor(Math.random() * videos.length)];
+
+  const source = video.querySelector('source');
+  if (source) {
+    source.src = random;
+    video.load();
+  }
+}
 
 /* === Navigation === */
 function initNavigation() {

@@ -57,6 +57,10 @@
 
   <!-- Hero Section -->
   <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content fade-in">
         <p class="hero-tagline">Trusted Legal Partner Since 2004</p>
@@ -123,73 +127,92 @@
       <div class="practice-grid">
         <!-- 민사 -->
         <article class="practice-card fade-in">
-          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-          </svg>
-          <h3 class="practice-title">민사 소송</h3>
-          <p class="practice-desc">
-            손해배상, 계약분쟁, 채권추심 등 민사 문제 전반에 대한 법률 서비스를 제공합니다.
-          </p>
-          <a href="practice.html" class="practice-link">
-            <span>자세히 보기</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+          <div class="practice-card-img">
+            <img src="images/practice_civil.jpg" alt="민사 소송">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">민사 소송</h3>
+            <p class="practice-desc">손해배상, 계약분쟁, 채권추심 등 민사 문제 전반에 대한 법률 서비스를 제공합니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </article>
 
         <!-- 형사 -->
         <article class="practice-card fade-in">
-          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-          <h3 class="practice-title">형사 변호</h3>
-          <p class="practice-desc">
-            수사 단계부터 재판까지 철저한 변호로 의뢰인의 권리를 보호합니다.
-          </p>
-          <a href="practice.html" class="practice-link">
-            <span>자세히 보기</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+          <div class="practice-card-img">
+            <img src="images/practice_criminal.jpg" alt="형사 변호">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">형사 변호</h3>
+            <p class="practice-desc">수사 단계부터 재판까지 철저한 변호로 의뢰인의 권리를 보호합니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </article>
 
         <!-- 기업 -->
         <article class="practice-card fade-in">
-          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/>
-            <path d="M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16"/>
-          </svg>
-          <h3 class="practice-title">기업 자문</h3>
-          <p class="practice-desc">
-            계약 검토, M&A, 노무 자문 등 기업 운영에 필요한 종합 법률 서비스를 제공합니다.
-          </p>
-          <a href="practice.html" class="practice-link">
-            <span>자세히 보기</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+          <div class="practice-card-img">
+            <img src="images/practice_corporate.jpg" alt="기업 자문">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">기업 자문</h3>
+            <p class="practice-desc">계약 검토, M&A, 노무 자문 등 기업 운영에 필요한 종합 법률 서비스를 제공합니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </article>
 
         <!-- 가사 -->
         <article class="practice-card fade-in">
-          <svg class="practice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-            <circle cx="12" cy="7" r="4"/>
-          </svg>
-          <h3 class="practice-title">가사 · 상속</h3>
-          <p class="practice-desc">
-            이혼, 양육권, 상속 문제를 신중하고 세심하게 해결해 드립니다.
-          </p>
-          <a href="practice.html" class="practice-link">
-            <span>자세히 보기</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+          <div class="practice-card-img">
+            <img src="images/practice_family.jpg" alt="가사·상속">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">가사 · 상속</h3>
+            <p class="practice-desc">이혼, 양육권, 상속 문제를 신중하고 세심하게 해결해 드립니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 부동산 -->
+        <article class="practice-card fade-in">
+          <div class="practice-card-img">
+            <img src="images/practice_realestate.jpg" alt="부동산">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">부동산</h3>
+            <p class="practice-desc">매매, 임대차, 재개발 등 부동산 전 분야의 안전한 거래와 권리 보호를 도와드립니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 행정 -->
+        <article class="practice-card fade-in">
+          <div class="practice-card-img">
+            <img src="images/practice_admin.jpg" alt="행정">
+          </div>
+          <div class="practice-card-body">
+            <h3 class="practice-title">행정</h3>
+            <p class="practice-desc">행정기관의 부당한 처분에 대응하고 인허가, 행정심판, 행정소송을 대리합니다.</p>
+            <a href="practice.html" class="practice-link">
+              <span>자세히 보기</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </article>
       </div>
     </div>
